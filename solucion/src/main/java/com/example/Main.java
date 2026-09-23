@@ -30,8 +30,23 @@ public class Main {
 
 
         // novela
-        Novela novela = new Novela("María", "Jorge Isaacs", 4, 1, "Romántica");
+        Novela novela = new Novela("María", "Jorge Isaacs", 4, 0, "Romántica");
         System.out.println(novela);
+
+        // Pruebas de préstamo y devolución
+        System.out.println("\n--- Pruebas préstamo y devolución ---");
+ 
+        System.out.println("Préstamo libro1: " + libro1.prestamo());
+        System.out.println(libro1);
+ 
+        System.out.println("Devolución libro1: " + libro1.devolucion());
+        System.out.println(libro1);
+ 
+        System.out.println("Préstamo libroTextoUNIAC: " + libroTextoUNIAC.prestamo());
+        System.out.println(libroTextoUNIAC);
+ 
+        // Caso que debe dar (false): devolver una novela que no se ha prestado
+        System.out.println("Devolución novela (sin haber sido prestada): " + novela.devolucion());
 
         scanner.close();
 
