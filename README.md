@@ -60,7 +60,8 @@ classDiagram
     Libro <|-- LibroTexto
     LibroTexto <|-- LibroTextoUNIAC
     Libro <|-- Novela
-`
+````
+
  Dentro de su código identifique 2 situaciones en las que no se podría realizar la herencia. (por ejemplo: modificadores de acceso, clases finales, entre otras).
 
 R//Uso del modificador final en la clase base:
