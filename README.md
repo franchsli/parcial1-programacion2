@@ -79,3 +79,17 @@ R// public class Libro {
 }
 
 Falla / Explicación: Al declarar un único constructor con visibilidad private en la clase Libro, las subclases (LibroTexto, Novela) no podrán invocar explícita ni implícitamente a super(). Como resultado, el compilador emitirá un error indicando que Libro() tiene acceso privado en Libro.
+
+Mencione dos nuevos atributos que se puedan agregar al ejercicio y un método adicional que tengan sentido y se puedan implementar.
+
+R//Nuevos Atributos:
+
+isbn (String): Identificador único internacional del libro.
+
+precioAlquiler (double): Costo asociado al préstamo del libro por día.
+
+Método Adicional:
+
+calcularMulta(int diasRetraso, double tarifaPorDia):
+
+Descripción: Calcula y retorna la sanción económica aplicable cuando un usuario devuelve un libro fuera de la fecha límite estipulada.
