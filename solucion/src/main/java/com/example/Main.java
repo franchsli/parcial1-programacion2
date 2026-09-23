@@ -21,6 +21,18 @@ public class Main {
         System.out.println("Ingrese número de ejemplares prestados del libro 2:");
         libro2.setNumeroEjemplaresPrestados(Integer.parseInt(scanner.nextLine()));
         System.out.println(libro2);
+
+        // libro de facultad
+        LibroTextoUNIAC libroTextoUNIAC = new LibroTextoUNIAC(
+                "Fundamentos de Programación", "Luis Joyanes Aguilar",
+                10, 3, "Programación II", "Facultad de Ingeniería");
+        System.out.println(libroTextoUNIAC);
+
+
+        // novela
+        Novela novela = new Novela("María", "Jorge Isaacs", 4, 1, "Romántica");
+        System.out.println(novela);
+
         scanner.close();
 
     }
