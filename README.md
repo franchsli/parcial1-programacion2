@@ -7,6 +7,7 @@ Integrantes:
 - FRANCISCO DAVID ARBOLEDA QUIÑONES.
 
 1.Construya el diagrama UML de clases del anterior ejercicio.
+
 ````mermaid
 classDiagram
     class Libro {
