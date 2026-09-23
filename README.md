@@ -61,3 +61,21 @@ classDiagram
     LibroTexto <|-- LibroTextoUNIAC
     Libro <|-- Novela
 `
+ Dentro de su código identifique 2 situaciones en las que no se podría realizar la herencia. (por ejemplo: modificadores de acceso, clases finales, entre otras).
+
+R//Uso del modificador final en la clase base:
+public final class Libro {
+    // Atributos y métodos
+}
+
+Falla / Explicación: La palabra clave final impide explícitamente que una clase sea extendida por otra. Si la clase Libro se declara como final, las subclases como LibroTexto o Novela generarán un error de compilación (cannot inherit from final Libro).
+
+Constructor privado o sin visibilidad de superclase disponible:
+
+R// public class Libro {
+    private Libro() {
+        // Constructor privado
+    }
+}
+
+Falla / Explicación: Al declarar un único constructor con visibilidad private en la clase Libro, las subclases (LibroTexto, Novela) no podrán invocar explícita ni implícitamente a super(). Como resultado, el compilador emitirá un error indicando que Libro() tiene acceso privado en Libro.
